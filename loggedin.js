@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
     );
     employee_create_reimbursement.setAttribute(
       "class",
-      "button is-danger is-outlined"
+      "button is-danger is-light"
     );
     employee_create_reimbursement.innerHTML = "Create Reimbursement"; // edit from here for reimbursement form
     employee_create_reimbursement.addEventListener("click", () => {

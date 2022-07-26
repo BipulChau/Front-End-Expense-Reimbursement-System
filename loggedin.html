@@ -16,10 +16,10 @@
       <nav>
         <div>
           <span>
-            <a href="loggedin.html" class="button is-link is-outlined">Home</a>
+            <a href="loggedin.html" class="button is-link is-light">Home</a>
           </span>
           <span id="finance_manager">
-            <button type="button" class="button is-success is-outlined">
+            <button type="button" class="button is-success is-light">
               Check Reimbursement Details
             </button>
           </span>
@@ -29,9 +29,9 @@
           <span id="employee_create_reimbursement">
             <a></a>
           </span>
-          <span id="name" class="button is-info is-outlined"></span>
-          <span id="role" class="button is-success is-outlined"></span>
-          <span id="username" class="button is-primary is-outlined"></span>
+          <span id="name" class="button is-info is-light"></span>
+          <span id="role" class="button is-success is-light"></span>
+          <span id="username" class="button is-primary is-light"></span>
           <span>
             <button
               type="button"
@@ -77,7 +77,8 @@
         </table>
       </div>
 
-      <div>
+      <div class="container">
+        <div class="columns is-centered">
         <form id="reimbursement_form" hidden>
           <span
             ><label for="typeOfExpense">Type of Expense</label>
@@ -107,9 +108,12 @@
             <label for="receiptImg">Upload Receipt</label>
             <input type="file" id="receiptImg" /> </span
           ><br /><br />
-          <button type="button" id="expenseCreateBtn">Submit</button>
+          <div class="buttons is-centered">
+          <button type="button" class="button is-primary" id="expenseCreateBtn">Submit</button>
+          </div>
         </form>
         <div id="message"></div>
+      </div>
       </div>
     </main>
   </body>
