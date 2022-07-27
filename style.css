@@ -1,9 +1,4 @@
-#password{
-  margin: 10px;
-}
-#username{
-  margin: 10px;
-}
-#login{
-  margin: 10px;
+body {
+  background-color: rgba(112, 147, 249, 0.593);
+
 }
