@@ -5,29 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ERS</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <form>
-      <div>
-        <label for="username">User name:</label>
-        <input type="text" id="username" class="input is-rounded" />
+    <section class="hero is-primary-light is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+              <form action="" class="box">
+                <div class="field">
+                  <label for="username">Username</label>
+                  <div class="control has-icons-left">
+                    <input type="text" placeholder="chaudhary21" class="input" id="username">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-user-circle-o"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="password">Password</label>
+                  <div class="control has-icons-left">
+                    <input type="password" placeholder="*******" class="input" id="password">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="buttons is-centered">
+                  <button type="button" id="login" class="button is-success">
+                    Login
+                  </button>
+                </div>
+              </form>
+              <div id="error-message"><p><span class="small"></span></p></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" class="input is-rounded" />
-      </div>
-      <div>
-        <button type="button" id="login" class="button is-success is-rounded">
-          Login
-        </button>
-      </div>
-    </form>
-    <div id="error-message"><p></p></div>
+    </section>
     <script src="index.js"></script>
   </body>
 </html>

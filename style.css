@@ -1,9 +1,19 @@
-#password{
-  margin: 10px;
+body {
+  background-image: linear-gradient(to left,#98daf9, #7295ff);
+  
+
 }
-#username{
-  margin: 10px;
+.n{
+  margin-inline: 15px;
 }
-#login{
-  margin: 10px;
+.r{
+  margin-inline: 15px;
+  text-transform: capitalize;
 }
+.u{
+  margin-inline: 15px;
+}
+#logout{
+  margin-inline: 12px;
+}
+
