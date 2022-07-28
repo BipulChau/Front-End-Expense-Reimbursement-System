@@ -90,38 +90,47 @@ function create_table(data_array) {
       let tableRow = document.createElement("tr");
       tableRow.setAttribute("id", user["reimb_id"]); // old id was "reimb_row"
       tableBody.appendChild(tableRow);
+      let reimb_id = document.createElement("td");
+      reimb_id.innerHTML = user["reimb_id"];
+      tableRow.appendChild(reimb_id);
+
+      let reimb_author = document.createElement("td");
+      reimb_author.innerHTML = user["reimb_author"];
+      tableRow.appendChild(reimb_author);
+
+      let type_of_expense = document.createElement("td");
+      type_of_expense.innerHTML = user["type_of_expense"];
+      tableRow.appendChild(type_of_expense);
+
       let description = document.createElement("td");
       description.innerHTML = user["description"];
       tableRow.appendChild(description);
+
+      let reimbursement_amount = document.createElement("td");
+      reimbursement_amount.innerHTML = user["reimbursement_amount"];
+      tableRow.appendChild(reimbursement_amount);
+
       let receipt_img = document.createElement("td");
       let img = document.createElement("img");
       img.setAttribute("src", user["receipt_img"]);
       receipt_img.appendChild(img);
       tableRow.appendChild(receipt_img);
-      let reimb_author = document.createElement("td");
-      reimb_author.innerHTML = user["reimb_author"];
-      tableRow.appendChild(reimb_author);
-      let reimb_id = document.createElement("td");
-      reimb_id.innerHTML = user["reimb_id"];
-      tableRow.appendChild(reimb_id);
-      let reimb_resolver = document.createElement("td");
-      reimb_resolver.innerHTML = user["reimb_resolver"];
-      tableRow.appendChild(reimb_resolver);
-      let reimbursement_amount = document.createElement("td");
-      reimbursement_amount.innerHTML = user["reimbursement_amount"];
-      tableRow.appendChild(reimbursement_amount);
-      let resolved_at = document.createElement("td");
-      resolved_at.innerHTML = user["resolved_at"];
-      tableRow.appendChild(resolved_at);
-      let status = document.createElement("td");
-      status.innerHTML = user["status"];
-      tableRow.appendChild(status);
+
       let submitted_at = document.createElement("td");
       submitted_at.innerHTML = user["submitted_at"];
       tableRow.appendChild(submitted_at);
-      let type_of_expense = document.createElement("td");
-      type_of_expense.innerHTML = user["type_of_expense"];
-      tableRow.appendChild(type_of_expense);
+
+      let status = document.createElement("td");
+      status.innerHTML = user["status"];
+      tableRow.appendChild(status);
+
+      let resolved_at = document.createElement("td");
+      resolved_at.innerHTML = user["resolved_at"];
+      tableRow.appendChild(resolved_at);
+
+      let reimb_resolver = document.createElement("td");
+      reimb_resolver.innerHTML = user["reimb_resolver"];
+      tableRow.appendChild(reimb_resolver);
 
       let approve_deny = document.createElement("td");
       let approve_btn = document.createElement("button");
@@ -212,38 +221,47 @@ function create_table(data_array) {
         let tableRow = document.createElement("tr");
         tableRow.setAttribute("id", user["reimb_id"]); // old id was "reimb_row"
         tableBody.appendChild(tableRow);
+        let reimb_id = document.createElement("td");
+        reimb_id.innerHTML = user["reimb_id"];
+        tableRow.appendChild(reimb_id);
+
+        let reimb_author = document.createElement("td");
+        reimb_author.innerHTML = user["reimb_author"];
+        tableRow.appendChild(reimb_author);
+
+        let type_of_expense = document.createElement("td");
+        type_of_expense.innerHTML = user["type_of_expense"];
+        tableRow.appendChild(type_of_expense);
+
         let description = document.createElement("td");
         description.innerHTML = user["description"];
         tableRow.appendChild(description);
+
+        let reimbursement_amount = document.createElement("td");
+        reimbursement_amount.innerHTML = user["reimbursement_amount"];
+        tableRow.appendChild(reimbursement_amount);
+
         let receipt_img = document.createElement("td");
         let img = document.createElement("img");
         img.setAttribute("src", user["receipt_img"]);
         receipt_img.appendChild(img);
         tableRow.appendChild(receipt_img);
-        let reimb_author = document.createElement("td");
-        reimb_author.innerHTML = user["reimb_author"];
-        tableRow.appendChild(reimb_author);
-        let reimb_id = document.createElement("td");
-        reimb_id.innerHTML = user["reimb_id"];
-        tableRow.appendChild(reimb_id);
-        let reimb_resolver = document.createElement("td");
-        reimb_resolver.innerHTML = user["reimb_resolver"];
-        tableRow.appendChild(reimb_resolver);
-        let reimbursement_amount = document.createElement("td");
-        reimbursement_amount.innerHTML = user["reimbursement_amount"];
-        tableRow.appendChild(reimbursement_amount);
-        let resolved_at = document.createElement("td");
-        resolved_at.innerHTML = user["resolved_at"];
-        tableRow.appendChild(resolved_at);
-        let status = document.createElement("td");
-        status.innerHTML = user["status"];
-        tableRow.appendChild(status);
+
         let submitted_at = document.createElement("td");
         submitted_at.innerHTML = user["submitted_at"];
         tableRow.appendChild(submitted_at);
-        let type_of_expense = document.createElement("td");
-        type_of_expense.innerHTML = user["type_of_expense"];
-        tableRow.appendChild(type_of_expense);
+
+        let status = document.createElement("td");
+        status.innerHTML = user["status"];
+        tableRow.appendChild(status);
+
+        let resolved_at = document.createElement("td");
+        resolved_at.innerHTML = user["resolved_at"];
+        tableRow.appendChild(resolved_at);
+
+        let reimb_resolver = document.createElement("td");
+        reimb_resolver.innerHTML = user["reimb_resolver"];
+        tableRow.appendChild(reimb_resolver);
 
         let approve_deny = document.createElement("td");
         let approve_btn = document.createElement("button");
