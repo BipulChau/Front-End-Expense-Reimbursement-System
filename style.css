@@ -1,4 +1,19 @@
 body {
-  background-color: rgba(112, 147, 249, 0.593);
+  background-image: linear-gradient(to left,#98daf9, #7295ff);
+  
 
 }
+.n{
+  margin-inline: 15px;
+}
+.r{
+  margin-inline: 15px;
+  text-transform: capitalize;
+}
+.u{
+  margin-inline: 15px;
+}
+#logout{
+  margin-inline: 12px;
+}
+
