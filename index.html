@@ -13,37 +13,37 @@
     <link rel="stylesheet" href="style.css" />
 
   </head>
-  <body>
-    <section class="hero is-primary-light is-fullheight">
+  <body id="body">
+    <section class="hero is-fullheight">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-5-tablet is-4-desktop is-3-widescreen">
-              <form action="" class="box">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <div class="box">
+              <p class="subtitle is-4">Please login to proceed.</p>
+              <br />
+              <form>
                 <div class="field">
-                  <label for="username">Username</label>
-                  <div class="control has-icons-left">
-                    <input type="text" placeholder="chaudhary21" class="input" id="username">
-                    <span class="icon is-small is-left">
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input" id="username" placeholder="Username" />
+                    <span class="icon is-medium is-left">
                       <i class="fa fa-user-circle-o"></i>
-                    </span>
-                  </div>
+                   
+                  </p>
                 </div>
                 <div class="field">
-                  <label for="password">Password</label>
-                  <div class="control has-icons-left">
-                    <input type="password" placeholder="*******" class="input" id="password">
+                  <p class="control has-icons-left">
+                    <input class="input" id="password" type="password" placeholder="******" />
                     <span class="icon is-small is-left">
                       <i class="fa fa-lock"></i>
                     </span>
-                  </div>
+                  </p>
                 </div>
-                <div class="buttons is-centered">
-                  <button type="button" id="login" class="button is-success">
-                    Login
-                  </button>
+          
+                <button type="button" id="login" class="button is-block is-info is-large is-fullwidth">Login</button><br />
+               
                 </div>
               </form>
+            </div>
               <div id="error-message"><p><span class="small"></span></p></div>
             </div>
           </div>
